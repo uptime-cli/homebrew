@@ -4,20 +4,20 @@
 class Uptimectl < Formula
     desc ""
     homepage "https://github.com/uptime-cli/uptimect"
-    version "0.0.1"
+    version "0.0.3"
   
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.1/uptimectl_0.0.1_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "846e2f4e82aa7a286d8832e023a8a9f4111353e8923264d26a3c71739dc0e64b"
+        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.3/uptimectl_0.0.3_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "06a2adce22b76aa9cb09aa6de30cfb13f5c8392a1c8b0be2874a2b6a8047ce38"
   
         def install
           bin.install "uptimectl"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.1/uptimectl_0.0.1_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "4912415d482f1d0a5f55cbf8999720886822092fcb63f66a3a7038e58164590c"
+        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.3/uptimectl_0.0.3_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "d1b2279ca9673562a79040fcae05e3ad22e1465fff655f577820c45c9bee7cd1"
   
         def install
           bin.install "uptimectl"
@@ -27,16 +27,16 @@ class Uptimectl < Formula
   
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.1/uptimectl_0.0.1_linux_arm64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "7105c244b648cc476e0ed8ba86d0df508281bbaa156b0bd7de2460ac3e8d1ab0"
+        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.3/uptimectl_0.0.3_linux_arm64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "0ac18898bbec848731db767de192979d705ecd556e750f387c3605d7defb8c9f"
   
         def install
           bin.install "uptimectl"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.1/uptimectl_0.0.1_linux_amd64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "82da555c497ff006cb0464cffcbc3c0fe9baa4b6029b35079b9ac0c3f671f24f"
+        url "https://github.com/uptime-cli/uptimectl/releases/download/v0.0.3/uptimectl_0.0.3_linux_amd64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "e9358d714c71ac2b656aadbdaa13ed03346bcf60a7ea63e2b0bfa25ae0d7900b"
   
         def install
           bin.install "uptimectl"
